@@ -10,17 +10,22 @@ function updateFooterYear() {
 }
 
 function highlightCurrentNav() {
-  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+  // Pracujeme s plne vyriesenymi URL (link.href), takze funguje nezavisle od
+  // base cesty — na koreni domeny, na podadresari (napr. /advoka/) aj lokalne.
+  const norm = url =>
+    new URL(url).pathname.replace(/index\.html$/, '').replace(/\/+$/, '') || '/';
+  const here = norm(window.location.href);
+  let best = null;
+  let bestLen = -1;
   document.querySelectorAll('[data-nav-link]').forEach(link => {
-    const href = link.getAttribute('href').replace(/\/+$/, '') || '/';
-    if (
-      href === path ||
-      (href !== '/' && path.startsWith(href + '/')) ||
-      (href !== '/' && path.startsWith(href))
-    ) {
-      link.setAttribute('aria-current', 'page');
+    const target = norm(link.href);
+    // Najdlhsia zhoda vyhrava, aby sa "Domov" nezvyraznoval na podstrankach.
+    if ((here === target || here.startsWith(target + '/')) && target.length > bestLen) {
+      best = link;
+      bestLen = target.length;
     }
   });
+  if (best) best.setAttribute('aria-current', 'page');
 }
 
 document.addEventListener('DOMContentLoaded', () => {

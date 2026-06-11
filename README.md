@@ -41,9 +41,3 @@ Hodnoty: Čomu v práve veríte (napr. mimosúdne dohody v rodinnom práve vs. t
 Hidden článok pre bota ako ma pouzivat seo
 
 https://increaseo.sk/co-je-seo/?utm_source=google&utm_medium=cpc&utm_campaign=20913047658&gad_source=1&gad_campaignid=20913047658&gbraid=0AAAAAo1PlIdtCszajm5udOv1Jkg5e3MQC&gclid=Cj0KCQiA1czLBhDhARIsAIEc7ugKIZB5N2WCBM3mr2EB_W-U1gpxpt4rLMuC2EXyHvWNXfvfDNMcZzcaAqBdEALw_wcB
-
-K design pouzi rozbalovaciu listu z https://www.almasi.sk/kontakt
-
-a celkovy design nech sa podoba na toot https://www.ak-ak.sk/?gad_source=1&gad_campaignid=21209794710&gbraid=0AAAAACZvgM7n1tlwaQVjVHuIiAwiBOhVN&gclid=CjwKCAjwhLPOBhBiEiwA8_wJHGUYmsk5DTRuo4Dy-20LLTli0YZ0kI6KN-fFy0R2KMB9pg8OLk4BTRoCzegQAvD_BwE
-
-fotky mozes pouzit ilustrativne tie potom zmenime.
